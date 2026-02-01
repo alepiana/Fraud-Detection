@@ -12,3 +12,6 @@ dependencies = [
     "scikit-learn>=1.6.1",
     "uvicorn>=0.39.0",
 ]
+
+[tool.uv]
+package = false
