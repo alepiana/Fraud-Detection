@@ -1,10 +1,11 @@
-import pandas as pd
-import numpy as np
-from sklearn.ensemble import RandomForestClassifier
-import joblib
 import os
 
-def train():
+import joblib
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+
+
+def train() -> None:
     # Generazione dati sintetici
     X = np.random.rand(1000, 4)
     y = (X[:, 0] * X[:, 2] > 0.7).astype(int)
@@ -13,9 +14,10 @@ def train():
     model.fit(X, y)
 
     # Path corretto: sale di un livello e entra in models
-    os.makedirs('models', exist_ok=True)
+    os.makedirs("models", exist_ok=True)
     joblib.dump(model, "models/fraud_model.joblib")
     print("✅ Modello salvato in models/fraud_model.joblib")
+
 
 if __name__ == "__main__":
     train()
