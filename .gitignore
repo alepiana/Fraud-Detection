@@ -1,0 +1,22 @@
+# Ambiente Virtuale (Fondamentale!)
+.venv/
+__pycache__/
+*.pyc
+
+# Cartelle specifiche di Mac
+.DS_Store
+
+# Modelli e Dati (Non si caricano file pesanti su GitHub)
+models/*.joblib
+data/*.csv
+data/*.parquet
+
+# File di log e cronologia (quelli che vedevi prima)
+*.log
+.bash_history
+.zsh_history
+
+# UV e IDE
+.python-version
+.idea/
+.vscode/
