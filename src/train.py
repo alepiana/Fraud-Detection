@@ -16,7 +16,7 @@ def train() -> None:
     # Path corretto: sale di un livello e entra in models
     os.makedirs("models", exist_ok=True)
     joblib.dump(model, "models/fraud_model.joblib")
-    print("✅ Modello salvato in models/fraud_model.joblib")
+    print("Modello salvato in models/fraud_model.joblib")
 
 
 if __name__ == "__main__":
